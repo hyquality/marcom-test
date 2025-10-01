@@ -7,7 +7,7 @@ export async function onRequest(context) {
   const ct = res.headers.get("content-type") || "";
   if (!ct.includes("text/html")) return res;
 
-  const baseHref = "https://iphone-air.pages.dev/"; // or your custom domain
+  const baseHref = "https://marcom-test.pages.dev/"; // or your custom domain
 
   return new HTMLRewriter()
     .on("head", {
